@@ -48,3 +48,5 @@ window.addEventListener("scroll", () => {
     navBar.style.transform = "translateY(0px)";
   }
 });
+
+/*------ Observe ------*/
