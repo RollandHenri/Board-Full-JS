@@ -19,13 +19,15 @@
 }
 
 body {
-  background-color: #191111;
-  height: 300vh;
+  background-color: #141110;
+  height: 400vh;
 }
 
 a {
   text-decoration: none;
-  color: black;
+}
+a:visited {
+  color: none;
 }
 
 nav {
@@ -37,8 +39,8 @@ nav {
   align-items: center;
   width: 100%;
   height: 80px;
-  background: rgba(80, 15, 28, 0.3764705882);
-  transition: 0.8s ease;
+  background: #3b3330;
+  transition: 1s ease;
 }
 nav .logo {
   width: 60px;
@@ -61,9 +63,12 @@ nav ul {
 nav ul li {
   position: relative;
   font-size: 1.2rem;
-  color: white;
+  color: #d4b3a5;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+nav ul li a {
+  color: #d4b3a5;
 }
 nav ul li:hover {
   scale: 1.1;
@@ -74,7 +79,7 @@ nav ul li:hover:after {
   top: -20px;
   left: 0;
   height: 3px;
-  background-color: white;
+  background-color: #302a27;
   animation: afterNav 0.5s ease forwards;
 }
 
@@ -86,7 +91,7 @@ header {
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  color: white;
+  color: #d4b3a5;
 }
 header h1 {
   margin-bottom: 50px;
@@ -99,4 +104,31 @@ header p span {
   font-size: 3rem;
   margin: 0 15px;
   color: #c66294;
+}
+
+main {
+  background: #1c1917;
+  height: 800px;
+}
+main section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+main section .aboutTitle {
+  color: #d4b3a5;
+  width: 50%;
+}
+main section .aboutTitle h2 {
+  margin: 30px 0;
+}
+main section .aboutImg {
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
