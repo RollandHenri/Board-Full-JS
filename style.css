@@ -1,13 +1,102 @@
 /*------------ Color -------------*/
 /*------------ KeyFrame ---------*/
+@keyframes afterNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #191111;
+  height: 300vh;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: rgba(80, 15, 28, 0.3764705882);
+  transition: 0.8s ease;
+}
+nav .logo {
+  width: 60px;
+  height: 60px;
+  background: url("/assets/icon/JavaScript-logo.webp") center/cover;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+nav .logo:hover {
+  transform: rotateY(360deg);
+  transition: 0.5s;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+nav ul li {
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+nav ul li:hover {
+  scale: 1.1;
+}
+nav ul li:hover:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  height: 3px;
+  background-color: white;
+  animation: afterNav 0.5s ease forwards;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+header h1 {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+header p {
+  font-size: 2rem;
+}
+header p span {
+  font-size: 3rem;
+  margin: 0 15px;
+  color: #c66294;
 }/*# sourceMappingURL=style.css.map */

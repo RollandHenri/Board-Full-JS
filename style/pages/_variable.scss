@@ -5,3 +5,15 @@ $color2: black;
 $color3: red;
 
 /*------------ KeyFrame ---------*/
+
+@keyframes afterNav {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}

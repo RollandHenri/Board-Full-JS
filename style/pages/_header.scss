@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  & h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+  }
+  & p {
+    font-size: 2rem;
+    & span {
+      font-size: 3rem;
+      margin: 0 15px;
+      color: #c66294;
+    }
+  }
+}

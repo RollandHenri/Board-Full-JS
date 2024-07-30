@@ -1,0 +1,49 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #500f1c60;
+  transition: 0.8s ease;
+  & .logo {
+    width: 60px;
+    height: 60px;
+    background: url("/assets/icon/JavaScript-logo.webp") center / cover;
+    border-radius: 100%;
+    transition: 0.5s;
+    &:hover {
+      transform: rotateY(360deg);
+      transition: 0.5s;
+    }
+  }
+  & ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    & li {
+      position: relative;
+      font-size: 1.2rem;
+      color: $color1;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        scale: 1.1;
+        &:after {
+          content: "";
+          position: absolute;
+          top: -20px;
+          left: 0;
+          height: 3px;
+          background-color: white;
+          animation: afterNav 0.5s ease forwards;
+        }
+      }
+    }
+  }
+}
