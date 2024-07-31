@@ -1,50 +1,41 @@
-/*------ Variables -----*/
+/*------ Variables ------*/
 
-const navBar = document.createElement("nav");
-const header = document.createElement("header");
-const main = document.createElement("main");
+const nav = document.querySelector("nav");
+const header = document.querySelector("header");
+const aboutTitle = document.querySelector(".aboutTitle");
+console.log(aboutTitle);
 
-/*------ Create Block ------*/
+/*------ Create HTML ------*/
 
-document.body.appendChild(navBar);
-document.body.appendChild(header);
-document.body.appendChild(main);
-
-/*------ InnerHTML ------*/
-
-navBar.innerHTML = `
+nav.innerHTML = `
 <div class="logo"> </div>
-<ul> 
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#">Skill</a></li>
-    <li><a href="#">Contact</a></li>
+
+<ul>
+<li> Accueil </li>
+<li> About </li>
+<li> Skils </li>
+<li> Contact </li>
 </ul>
 `;
 
 header.innerHTML = `
-<h1> Le site Full JavaScript</h1>
-<p> Est <span> 
- 
-<i class="fa-brands fa-sass"></i> </span> </p> 
+<h1> Voici un Site uniquement en JavaScript </h1>
+<p>Et en <span><i class="fa-brands fa-sass"></i> </span></p>
 `;
 
-main.innerHTML = `
-<section id="about">
-<div class="aboutTitle"> <h2> A propos de moi </h2> 
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate minus, ut officia, quasi eos voluptas eum nulla libero provident aliquid, nobis neque dolorum suscipit. Sequi odio, explicabo labore sunt eius atque perspiciatis quo porro fugiat ad distinctio, quam autem excepturi. </p>
-</div>
-<div class="aboutImg"> </div>
-</section> 
+aboutTitle.innerHTML = `
+<h2> A propos de moi </h2>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt nostrum est laboriosam, unde ullam modi impedit necessitatibus iure, ab neque dolorem consequatur? Voluptate, dignissimos recusandae deleniti cumque nihil iste? </p>
 `;
 
-/*------ Annim ------*/
+/*------ EventListener ------*/
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
-  if (window.scrollY > 150) {
-    navBar.style.transform = "translateY(-200px)";
+  if (window.scrollY > 120) {
+    nav.style.transform = "translateY(-250px)";
   } else {
-    navBar.style.transform = "translateY(0px)";
+    nav.style.transform = "translateY(0px)";
   }
 });
+
+/*------ Observer ------*/
