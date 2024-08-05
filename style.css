@@ -137,7 +137,6 @@ header p span {
 }
 
 #skills {
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,4 +195,80 @@ header p span {
 #skills .iconRight .iconFlex i:hover {
   transform: scale(1.1);
   transition: 0.25s ease;
+}
+
+#folio {
+  width: 100%;
+  margin: 80px auto;
+  background: #1c1917;
+}
+#folio .folioContain {
+  width: 100%;
+}
+#folio .folioContain h2 {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+  color: #d4b3a5;
+}
+#folio .folioContain .folioList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 40px;
+  margin: 0 auto;
+}
+#folio .folioContain .folioList .listCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  background: transparent;
+}
+#folio .folioContain .folioList .listCard .effect {
+  width: 80%;
+  height: 80%;
+  background-color: #141110;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+}
+#folio .folioContain .folioList .listCard .effect h3 {
+  padding: 15px;
+  color: #d4b3a5;
+  text-align: center;
+  opacity: 0;
+}
+#folio .folioContain .folioList .listCard .effect p {
+  text-align: center;
+  padding: 15px;
+  color: #d4b3a5;
+  opacity: 0;
+}
+#folio .folioContain .folioList .listCard:hover > .effect {
+  transition: 0.6s ease-in-out;
+  opacity: 1;
+}
+#folio .folioContain .folioList .listCard:hover > .effect h3 {
+  opacity: 1;
+}
+#folio .folioContain .folioList .listCard:hover > .effect p {
+  opacity: 1;
+}
+#folio .folioContain .folioList .card1 {
+  background: url("../../assets/img/card1.webp") center/cover;
+}
+#folio .folioContain .folioList .card2 {
+  background: url("../../assets/img/card2.webp") center/cover;
+}
+#folio .folioContain .folioList .card3 {
+  background: url("../../assets/img/card3.webp") center/cover;
+}
+#folio .folioContain .folioList .card4 {
+  background: url("../../assets/img/card4.webp") center/cover;
 }/*# sourceMappingURL=style.css.map */

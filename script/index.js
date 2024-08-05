@@ -5,6 +5,8 @@ const header = document.querySelector("header");
 const aboutTitle = document.querySelector(".aboutTitle");
 const aboutImg = document.querySelector(".aboutImg");
 const skills = document.getElementById("skills");
+const folio = document.getElementById("folio");
+console.log(folio);
 
 /*------ Create HTML ------*/
 
@@ -76,7 +78,38 @@ skills.innerHTML = `
     </div>
 </div> 
 </div> 
+`;
 
+folio.innerHTML = `
+<div class='folioContain'> 
+  <h2> Folio </h2>  
+  <div class="folioList"> 
+  <div class="listCard card1">
+    <div class='effect'> 
+    <h3> HTML / SASS </h3>
+    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    </div>
+  </div>
+  <div class="listCard card2"> 
+    <div class='effect'>
+    <h3> HTML / SASS </h3>
+    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    </div> 
+  </div>
+  <div class="listCard card3"> 
+    <div class='effect'>
+    <h3> HTML / SASS </h3>
+    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    </div> 
+  </div>
+  <div class="listCard card4">
+    <div class='effect'>
+    <h3> JavaScript / SASS </h3>
+    <p> Un site développé principalement en JavaScript et SASS ce qui en fait un site internet dynamique et fluide</p> 
+    </div>
+  </div>
+  </div>
+</div>
 `;
 
 /*------ EventListener ------*/
