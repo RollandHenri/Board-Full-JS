@@ -152,8 +152,9 @@ const observerII = new IntersectionObserver(
     }
   },
   {
-    threshold: 1,
+    threshold: 0.7,
   }
 );
 
 observerII.observe(skills);
+observerII.observe(folio);

@@ -2,6 +2,9 @@
   width: 100%;
   margin: 80px auto;
   background: $color2;
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
   & .folioContain {
     width: 100%;
     & h2 {
