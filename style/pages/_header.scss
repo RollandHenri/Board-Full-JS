@@ -12,11 +12,13 @@ header {
     font-size: 2.2rem;
   }
   & p {
-    font-size: 2rem;
+    margin-top: 10px;
+    font-size: 2.5rem;
     & span {
+      margin-left: 10px;
       font-size: 3rem;
-      margin: 0 15px;
       color: #c66294;
+      overflow: hidden;
     }
   }
 }

@@ -4,11 +4,13 @@
   padding: 0;
   list-style: none;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #141110;
   height: 400vh;
+  overflow-x: hidden;
 }
 
 a {

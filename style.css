@@ -16,11 +16,13 @@
   padding: 0;
   list-style: none;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #141110;
   height: 400vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -98,15 +100,17 @@ header h1 {
   font-size: 2.2rem;
 }
 header p {
-  font-size: 2rem;
+  margin-top: 10px;
+  font-size: 2.5rem;
 }
 header p span {
+  margin-left: 10px;
   font-size: 3rem;
-  margin: 0 15px;
   color: #c66294;
+  overflow: hidden;
 }
 
-main {
+#about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,13 +118,82 @@ main {
   background: #1c1917;
   padding: 80px;
 }
-main .aboutTitle {
+#about .aboutTitle {
   width: 50%;
   color: #d4b3a5;
+  line-height: 30px;
 }
-main #aboutImg {
+#about .aboutTitle h2 {
+  margin: 20px auto;
+}
+#about .aboutImg {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   background: white;
+  opacity: 0;
+  transform: translateX(150px);
+  transition: 0.8s ease-in;
+}
+
+#skills {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  color: white;
+  width: 100%;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+#skills h2 {
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+  padding-bottom: 40px;
+  font-size: 2rem;
+  color: #d4b3a5;
+}
+#skills .skillsContain {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  text-align: center;
+}
+#skills .skillsLeft {
+  width: 40%;
+}
+#skills .skillsLeft h3 {
+  margin: 20px auto;
+  color: #d4b3a5;
+  font-size: 1.5rem;
+}
+#skills .skillsRight {
+  width: 40%;
+}
+#skills .skillsRight h3 {
+  margin: 20px auto;
+  color: #d4b3a5;
+  font-size: 1.5rem;
+}
+#skills .iconLeft,
+#skills .iconRight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#skills .iconLeft .iconFlex i,
+#skills .iconRight .iconFlex i {
+  font-size: 4rem;
+  margin: 20px 0;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+#skills .iconLeft .iconFlex i:hover,
+#skills .iconRight .iconFlex i:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease;
 }/*# sourceMappingURL=style.css.map */
