@@ -1,0 +1,44 @@
+#footer {
+  background: $color1;
+  & .footerList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & ul {
+      width: 50%;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      & h3 {
+        padding-top: 40px;
+        font-size: 2rem;
+        color: $color3;
+      }
+      & li {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        & a {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          color: white;
+        }
+      }
+      & i {
+        margin-right: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  & h3 {
+    color: $color3;
+  }
+}

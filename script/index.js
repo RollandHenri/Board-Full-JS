@@ -6,7 +6,9 @@ const aboutTitle = document.querySelector(".aboutTitle");
 const aboutImg = document.querySelector(".aboutImg");
 const skills = document.getElementById("skills");
 const folio = document.getElementById("folio");
-console.log(folio);
+const contact = document.getElementById("contact");
+const footer = document.getElementById("footer");
+console.log(footer);
 
 /*------ Create HTML ------*/
 
@@ -16,8 +18,8 @@ nav.innerHTML = `
 <ul>
 <li> <a href="#"> Accueil </a> </li>
 <li> <a href='#about'> About </a> </li>
-<li> Skils </li>
-<li> Folio </li>
+<li> <a href="#skills">Skils </a></li>
+<li> <a href="#folio"> Folio </a></li>
 <li> Contact </li>
 </ul>
 `;
@@ -99,7 +101,7 @@ folio.innerHTML = `
   <div class="listCard card3"> 
     <div class='effect'>
     <h3> HTML / SASS </h3>
-    <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    <p> Un site développé en HTML / SASS / JavaScrip </p> 
     </div> 
   </div>
   <div class="listCard card4">
@@ -110,6 +112,31 @@ folio.innerHTML = `
   </div>
   </div>
 </div>
+`;
+
+contact.innerHTML = `
+<form class='form' action='#'> 
+<h3> Contact </h3>
+<div class='formul'>
+<input type='text' placeholder='Nom'>
+<input type='text' placeholder='Email'>
+ <textarea name="message" id="message" resize='none' placeholder='Votre message'></textarea>
+ </div>
+ <input type='submit'/> 
+`;
+
+footer.innerHTML = `
+<div class='footerList'> 
+  <ul>
+    <li><h3>Réseau</h3></li>
+    <li><a href='github.com'> <i class="fa-brands fa-github"></i> GitHub </a></li>
+    <li><a href='twiter.com'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
+    <li><a href='instagram.comm'><i class="fa-brands fa-instagram"> </i> Instag</a> </li>
+  </ul>
+  <h3> Site créé par Tramontane </br> </br> En 2024 </h3>
+  
+</div>
+
 `;
 
 /*------ EventListener ------*/
