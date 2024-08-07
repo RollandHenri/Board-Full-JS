@@ -8,7 +8,17 @@ const skills = document.getElementById("skills");
 const folio = document.getElementById("folio");
 const contact = document.getElementById("contact");
 const footer = document.getElementById("footer");
-console.log(footer);
+const textarea = document.querySelector("textarea");
+const submit = document.querySelector('input[type="submit"]');
+const result = document.querySelector(".result");
+const popUp = document.querySelector(".popUp");
+const mailAnswer = document.getElementById("mailAnswer");
+const news = document.getElementById("mail");
+const close = document.querySelector(".popUp > i");
+
+console.log(news);
+
+let scrollDown = 0;
 
 /*------ Create HTML ------*/
 
@@ -142,11 +152,45 @@ footer.innerHTML = `
 /*------ EventListener ------*/
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 120) {
-    nav.style.transform = "translateY(-250px)";
+  if (window.scrollY < scrollDown) {
+    nav.style.transform = "translateY(0px)";
+  } else if (window.scrollY > 120) {
+    nav.style.transform = "translateY(-100px)";
   } else {
     nav.style.transform = "translateY(0px)";
   }
+  scrollDown = window.scrollY;
+});
+
+close.addEventListener("click", () => {
+  popUp.style.right = "-130px";
+  popUp.style.opacity = "0";
+});
+
+/*------ Data -------*/
+
+textarea.addEventListener("keypress", (e) => {
+  let answer = e.target.value;
+
+  submit.addEventListener("click", () => {
+    result.innerHTML = `
+    Votre message est ${answer}
+    `;
+  });
+});
+
+mailAnswer.addEventListener("keypress", (e) => {
+  let innerAnswer = e.target.value;
+  mail.addEventListener("click", (e) => {
+    popUp.innerHTML = `
+    <div class="popUpAnswer"
+   <div class="answer"> <p> Email envoyé à </br> ${innerAnswer} </p>
+   <i  id='close' class="fa-regular fa-circle-check"></i> 
+   </div>
+   
+   </div>
+    `;
+  });
 });
 
 /*------ Observer translate X ------*/
@@ -157,6 +201,7 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         entry.target.style.transform = "translateX(0px)";
         entry.target.style.opacity = "1";
+        entry.target.style.right = "0px";
       }
     }
   },
@@ -166,6 +211,7 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(aboutImg);
+observer.observe(popUp);
 
 /*----- Observer Translate Y ------*/
 
@@ -179,7 +225,7 @@ const observerII = new IntersectionObserver(
     }
   },
   {
-    threshold: 0.7,
+    threshold: 0.3,
   }
 );
 

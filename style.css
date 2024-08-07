@@ -20,6 +20,7 @@
 }
 
 body {
+  position: relative;
   background-color: #141110;
   height: auto;
   overflow-x: hidden;
@@ -43,6 +44,7 @@ nav {
   height: 80px;
   background: #3b3330;
   transition: 0.75s ease-in-out;
+  z-index: 3;
 }
 nav .logo {
   width: 60px;
@@ -202,7 +204,7 @@ header p span {
   width: 100%;
   margin: 80px auto;
   background: #1c1917;
-  transform: translateY(-200px);
+  transform: translateY(200px);
   opacity: 0;
   transition: 0.8s ease-in-out;
 }
@@ -278,6 +280,7 @@ header p span {
 }
 
 #contact {
+  position: relative;
   width: 100%;
   height: 500px;
   background: #141110;
@@ -328,7 +331,35 @@ header p span {
   cursor: pointer;
 }
 
+.formTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formTest #name {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.formTest input[type=submit] {
+  width: 100px;
+  height: 40px;
+  transition: 0.4s;
+}
+.formTest input[type=submit]:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.result {
+  padding: 30px 0;
+  color: white;
+}
+
 #footer {
+  position: relative;
   background: #141110;
 }
 #footer .footerList {
@@ -371,4 +402,70 @@ header p span {
 }
 #footer h3 {
   color: #d4b3a5;
+}
+
+.popUp {
+  position: absolute;
+  bottom: 0;
+  right: -130px;
+  width: 40%;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 30% 15% 15% 30%;
+  opacity: 0;
+  transition: 0.7s ease-in-out;
+}
+.popUp i {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 50px 15px 0 35px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.popUp i:hover {
+  transform: scale(1.2);
+  transition: 0.4s ease;
+}
+.popUp h3 {
+  text-align: center;
+}
+.popUp p {
+  text-align: center;
+}
+.popUp input[type=text] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 220px;
+  height: 40px;
+  margin: 15px auto;
+}
+.popUp input[type=submit] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.popUpAnswer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.popUpAnswer p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+.popUpAnswer i {
+  color: green;
 }/*# sourceMappingURL=style.css.map */

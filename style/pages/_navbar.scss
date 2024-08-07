@@ -9,6 +9,7 @@ nav {
   height: 80px;
   background: #3b3330;
   transition: 0.75s ease-in-out;
+  z-index: 3;
   & .logo {
     width: 60px;
     height: 60px;
