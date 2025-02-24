@@ -16,8 +16,6 @@ const mailAnswer = document.getElementById("mailAnswer");
 const news = document.getElementById("mail");
 const close = document.querySelector(".popUp > i");
 
-console.log(news);
-
 let scrollDown = 0;
 
 /*------ Create HTML ------*/
@@ -30,13 +28,7 @@ nav.innerHTML = `
 <li> <a href='#about'> About </a> </li>
 <li> <a href="#skills">Skils </a></li>
 <li> <a href="#folio"> Folio </a></li>
-<li> Contact </li>
 </ul>
-`;
-
-header.innerHTML = `
-<h1> Voici un Site uniquement en JavaScript </h1>
-<p>Et en <span><i class="fa-brands fa-sass"></i> </span></p>
 `;
 
 aboutTitle.innerHTML = `
@@ -124,16 +116,16 @@ folio.innerHTML = `
 </div>
 `;
 
-contact.innerHTML = `
-<form class='form' action='#'> 
-<h3> Contact </h3>
-<div class='formul'>
-<input type='text' placeholder='Nom'>
-<input type='text' placeholder='Email'>
- <textarea name="message" id="message" resize='none' placeholder='Votre message'></textarea>
- </div>
- <input type='submit'/> 
-`;
+// contact.innerHTML = `
+// <form class='form' action='#'>
+// <h3> Contact </h3>
+// <div class='formul'>
+// <input type='text' placeholder='Nom'>
+// <input type='text' placeholder='Email'>
+//  <textarea name="message" id="message" resize='none' placeholder='Votre message'></textarea>
+//  </div>
+//  <input type='submit'/>
+// `;
 
 footer.innerHTML = `
 <div class='footerList'> 
@@ -162,36 +154,38 @@ window.addEventListener("scroll", () => {
   scrollDown = window.scrollY;
 });
 
-close.addEventListener("click", () => {
-  popUp.style.right = "-130px";
-  popUp.style.opacity = "0";
-});
+// close.addEventListener("click", () => {
+//   popUp.style.right = "-130px";
+//   popUp.style.opacity = "0";
+// });
+
+/*------ Anim Text ------*/
 
 /*------ Data -------*/
 
-textarea.addEventListener("keypress", (e) => {
-  let answer = e.target.value;
+// textarea.addEventListener("keypress", (e) => {
+//   let answer = e.target.value;
 
-  submit.addEventListener("click", () => {
-    result.innerHTML = `
-    Votre message est ${answer}
-    `;
-  });
-});
+//   submit.addEventListener("click", () => {
+//     result.innerHTML = `
+//     Votre message est ${answer}
+//     `;
+//   });
+// });
 
-mailAnswer.addEventListener("keypress", (e) => {
-  let innerAnswer = e.target.value;
-  mail.addEventListener("click", (e) => {
-    popUp.innerHTML = `
-    <div class="popUpAnswer"
-   <div class="answer"> <p> Email envoyé à </br> ${innerAnswer} </p>
-   <i  id='close' class="fa-regular fa-circle-check"></i> 
-   </div>
-   
-   </div>
-    `;
-  });
-});
+// mailAnswer.addEventListener("keypress", (e) => {
+//   let innerAnswer = e.target.value;
+//   mail.addEventListener("click", (e) => {
+//     popUp.innerHTML = `
+//     <div class="popUpAnswer"
+//    <div class="answer"> <p> Email envoyé à </br> ${innerAnswer} </p>
+//    <i  id='close' class="fa-regular fa-circle-check"></i>
+//    </div>
+
+//    </div>
+//     `;
+//   });
+// });
 
 /*------ Observer translate X ------*/
 
@@ -211,7 +205,6 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(aboutImg);
-observer.observe(popUp);
 
 /*----- Observer Translate Y ------*/
 

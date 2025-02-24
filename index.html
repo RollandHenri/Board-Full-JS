@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/assets/icon/JavaScript-logo.webp" />
-    <script src="https://kit.fontawesome.com/608a2f0f42.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/608a2f0f42.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Site Full Javascript</title>
   </head>
   <body>
     <nav></nav>
-    <header></header>
+    <header>
+      <div class="center">
+        <div class="left">
+          <h1>Voici un site uniquement</h1>
+        </div>
+        <div class="right">
+          <h2>développé en Javascript</h2>
+        </div>
+      </div>
+      <div class="down">
+        <h3>
+          Et en <span><i class="fa-brands fa-sass"></i></span>
+        </h3>
+      </div>
+    </header>
     <main id="about">
       <section class="aboutTitle"></section>
       <div class="aboutImg"></div>
@@ -20,27 +37,7 @@
 
     <main id="folio"></main>
 
-    <main id="contact"></main>
-    <section class="formTest">
-      <form action="#">
-        <label for="name" id="name"></label>
-        <textarea name="name" id="name" placeholder="Votre message ici"></textarea>
-      </form>
-      <input type="submit" />
-      <div class="result"></div>
-    </section>
-
     <footer id="footer"></footer>
-
-    <div class="popUp">
-      <i class="fa-regular fa-circle-xmark"></i>
-      <h3>Newsletter</h3>
-      <p>Inscription à la Newsletter</p>
-      <div class="input">
-        <input type="text" id="mailAnswer" placeholder="Email" />
-        <input type="submit" id="mail" />
-      </div>
-    </div>
 
     <script src="./script/index.js"></script>
   </body>

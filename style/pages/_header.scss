@@ -6,20 +6,25 @@ header {
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  color: red;
-  background: url("../../assets/img/headerBK.webp") center / cover;
-  & h1 {
+  color: $color3;
+  transition: 0.5s;
+  & .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
-    font-size: 2.2rem;
+    font-size: 1.3rem;
+    & .left {
+      margin-right: 10px;
+    }
   }
-  & p {
-    margin-top: 10px;
-    font-size: 2.5rem;
-    & span {
-      margin-left: 10px;
+  & .down {
+    font-size: 1.5rem;
+    & i {
+      color: pink;
       font-size: 3rem;
-      color: #c66294;
-      overflow: hidden;
+      margin-left: 10px;
     }
   }
 }
