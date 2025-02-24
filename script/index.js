@@ -116,17 +116,6 @@ folio.innerHTML = `
 </div>
 `;
 
-// contact.innerHTML = `
-// <form class='form' action='#'>
-// <h3> Contact </h3>
-// <div class='formul'>
-// <input type='text' placeholder='Nom'>
-// <input type='text' placeholder='Email'>
-//  <textarea name="message" id="message" resize='none' placeholder='Votre message'></textarea>
-//  </div>
-//  <input type='submit'/>
-// `;
-
 footer.innerHTML = `
 <div class='footerList'> 
   <ul>
@@ -153,39 +142,6 @@ window.addEventListener("scroll", () => {
   }
   scrollDown = window.scrollY;
 });
-
-// close.addEventListener("click", () => {
-//   popUp.style.right = "-130px";
-//   popUp.style.opacity = "0";
-// });
-
-/*------ Anim Text ------*/
-
-/*------ Data -------*/
-
-// textarea.addEventListener("keypress", (e) => {
-//   let answer = e.target.value;
-
-//   submit.addEventListener("click", () => {
-//     result.innerHTML = `
-//     Votre message est ${answer}
-//     `;
-//   });
-// });
-
-// mailAnswer.addEventListener("keypress", (e) => {
-//   let innerAnswer = e.target.value;
-//   mail.addEventListener("click", (e) => {
-//     popUp.innerHTML = `
-//     <div class="popUpAnswer"
-//    <div class="answer"> <p> Email envoyé à </br> ${innerAnswer} </p>
-//    <i  id='close' class="fa-regular fa-circle-check"></i>
-//    </div>
-
-//    </div>
-//     `;
-//   });
-// });
 
 /*------ Observer translate X ------*/
 
