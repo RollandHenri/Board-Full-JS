@@ -31,11 +31,6 @@ nav.innerHTML = `
 </ul>
 `;
 
-aboutTitle.innerHTML = `
-<h2> A propos de moi </h2>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt deserunt nostrum est laboriosam, unde ullam modi impedit necessitatibus iure, ab neque dolorem consequatur? Voluptate, dignissimos recusandae deleniti cumque nihil iste? </p>
-`;
-
 skills.innerHTML = `
 <h2> Mes Skills </h2>
 <div class='skillsContain'>
@@ -164,7 +159,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-observer.observe(aboutImg);
+// observer.observe(aboutImg);
 
 /*----- Observer Translate Y ------*/
 

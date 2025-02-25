@@ -1,24 +1,19 @@
 nav {
   position: fixed;
-  top: 0;
+  top: -120px;
   left: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 80px;
-
-  transition: 0.75s ease-in-out;
+  transition: 0.5s ease-in-out;
   z-index: 3;
+  animation: onLoadNav 1s ease forwards 1.5s;
   & .logo {
     width: 130px;
     height: 70px;
     background: url("/assets/icon/logo.png") center / cover;
-    transition: 0.5s;
-    &:hover {
-      transform: rotateY(360deg);
-      transition: 0.5s;
-    }
   }
   & ul {
     display: flex;
@@ -34,17 +29,17 @@ nav {
       transition: 0.3s ease-in-out;
       & a {
         color: black;
-      }
-      &:hover {
-        scale: 1.1;
-        &:after {
-          content: "";
-          position: absolute;
-          top: -20px;
-          left: 0;
-          height: 3px;
-          background-color: #302a27;
-          animation: afterNav 0.5s ease forwards;
+        &:hover {
+          scale: 1.1;
+          &:after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            height: 3px;
+            background-color: #302a27;
+            animation: afterNav 0.5s ease forwards;
+          }
         }
       }
     }
@@ -52,6 +47,6 @@ nav {
 }
 
 .navScroll {
-  background: rgba(255, 255, 255, 0.63);
+  background: rgba(255, 255, 255, 0.432);
   backdrop-filter: blur(15px);
 }

@@ -6,6 +6,29 @@ $color3: #d4b3a5;
 
 /*------------ KeyFrame ---------*/
 
+@keyframes onLoadNav {
+  0% {
+    top: -120px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes onLoadTranslate {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
 @keyframes afterNav {
   0% {
     opacity: 0;
