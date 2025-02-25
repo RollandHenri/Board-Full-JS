@@ -135,8 +135,12 @@ footer.innerHTML = `
 window.addEventListener("scroll", () => {
   if (window.scrollY < scrollDown) {
     nav.style.transform = "translateY(0px)";
+    if (window.scrollY === 0) {
+      nav.classList.remove("navScroll");
+    }
   } else if (window.scrollY > 120) {
     nav.style.transform = "translateY(-100px)";
+    nav.classList.add("navScroll");
   } else {
     nav.style.transform = "translateY(0px)";
   }
