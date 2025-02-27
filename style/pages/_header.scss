@@ -1,6 +1,5 @@
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -15,25 +14,44 @@ header {
     rgba(0, 0, 0, 1) 70%
   );
   transition: 0.5s;
-  & .center {
+  & .headerHero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+  & .up {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 1.3rem;
-    & .left {
-      margin-right: 10px;
-    }
+  }
+  & .mid {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
   }
   & .down {
-    font-size: 1.5rem;
-    & i {
-      color: pink;
-      font-size: 3rem;
-      margin-left: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  & .logoLink {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & img {
+      transition: all 0.4s ease;
+    }
+    & img:hover {
+      scale: 1.1;
+      transition: all 0.4s ease;
     }
   }
+
   & .aboutImg {
     width: 300px;
     height: 300px;

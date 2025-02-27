@@ -32,7 +32,7 @@ nav.innerHTML = `
 `;
 
 skills.innerHTML = `
-<h2> Mes Skills </h2>
+<h2> Mes compétences </h2>
 <div class='skillsContain'>
 <div class="skillsLeft"> 
     <h3> Hard Skills </h3>
@@ -124,23 +124,6 @@ footer.innerHTML = `
 </div>
 
 `;
-
-/*------ EventListener ------*/
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY < scrollDown) {
-    nav.style.transform = "translateY(0px)";
-    if (window.scrollY === 0) {
-      nav.classList.remove("navScroll");
-    }
-  } else if (window.scrollY > 120) {
-    nav.style.transform = "translateY(-100px)";
-    nav.classList.add("navScroll");
-  } else {
-    nav.style.transform = "translateY(0px)";
-  }
-  scrollDown = window.scrollY;
-});
 
 /*------ Observer translate X ------*/
 

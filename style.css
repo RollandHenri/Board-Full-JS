@@ -54,7 +54,7 @@ a:visited {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: -120px;
   left: 0;
   display: flex;
@@ -69,7 +69,7 @@ nav {
 nav .logo {
   width: 130px;
   height: 70px;
-  background: url("/assets/icon/logo.png") center/cover;
+  background: url("/assets/icon/logo.webp") center/cover;
 }
 nav ul {
   display: flex;
@@ -109,7 +109,6 @@ nav ul li a:hover:after {
 
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -120,24 +119,41 @@ header {
   background: linear-gradient(171deg, rgb(255, 255, 255) 0%, rgb(87, 22, 55) 37%, rgb(0, 0, 0) 70%);
   transition: 0.5s;
 }
-header .center {
+header .headerHero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+header .up {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 1.3rem;
 }
-header .center .left {
-  margin-right: 10px;
+header .mid {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 header .down {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
 }
-header .down i {
-  color: pink;
-  font-size: 3rem;
-  margin-left: 10px;
+header .logoLink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logoLink img {
+  transition: all 0.4s ease;
+}
+header .logoLink img:hover {
+  scale: 1.1;
+  transition: all 0.4s ease;
 }
 header .aboutImg {
   width: 300px;
@@ -159,6 +175,7 @@ header .aboutImg {
   background: black;
   color: white;
   width: 100%;
+  height: 100vh;
   transform: translateY(200px);
   opacity: 0;
   transition: 0.8s ease-in-out;
@@ -166,6 +183,8 @@ header .aboutImg {
 #skills h2 {
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin: 50px auto;
   padding-bottom: 40px;
   font-size: 2rem;
