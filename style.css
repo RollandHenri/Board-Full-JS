@@ -204,6 +204,14 @@ header .aboutImg {
   color: #d4b3a5;
   font-size: 1.5rem;
 }
+#skills .skillsMid {
+  width: 40%;
+}
+#skills .skillsMid h3 {
+  margin: 20px auto;
+  color: #d4b3a5;
+  font-size: 1.5rem;
+}
 #skills .skillsRight {
   width: 40%;
 }
@@ -214,9 +222,8 @@ header .aboutImg {
 }
 #skills .iconLeft,
 #skills .iconRight {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #skills .iconLeft .iconFlex i,
 #skills .iconRight .iconFlex i {

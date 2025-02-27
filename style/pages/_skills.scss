@@ -37,6 +37,15 @@
     }
   }
 
+  & .skillsMid {
+    width: 40%;
+    & h3 {
+      margin: 20px auto;
+      color: $color3;
+      font-size: 1.5rem;
+    }
+  }
+
   & .skillsRight {
     width: 40%;
     & h3 {
@@ -47,9 +56,8 @@
   }
   & .iconLeft,
   .iconRight {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     & .iconFlex {
       & i {
         font-size: 4rem;

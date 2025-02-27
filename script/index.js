@@ -35,16 +35,9 @@ skills.innerHTML = `
 <h2> Mes compétences </h2>
 <div class='skillsContain'>
 <div class="skillsLeft"> 
-    <h3> Hard Skills </h3>
+    <h3> Développement Front-End </h3>
         <div class="iconLeft"> 
-        <div class='iconFlex'>
-            <i class="fa-brands fa-html5"></i>
-            <p> HTML 5 </p>
-        </div>
-        <div class='iconFlex'>
-            <i class="fa-brands fa-css3-alt"></i>
-            <p> CSS 3 </p>
-        </div>
+        
         <div class='iconFlex'> 
            <i class="fa-brands fa-sass"></i>
             <p> SASS </p>
@@ -53,8 +46,23 @@ skills.innerHTML = `
             <i class="fa-brands fa-js"></i>
             <p> JavaScript </p>
         </div>
+        <div class='iconFlex'>
+            <i class="fa-brands fa-react"></i>
+            <p> React.js </p>
+        </div>
         </div> 
 </div> 
+
+<div class="skillsMid">
+      <h3> Développement Wordpress</h3>
+        <div class="iconLeft"> 
+          <div class='iconFlex'>
+              <i class="fa-brands fa-wordpress"></i>
+              <p> Wordpress</p>
+          </div> 
+        </div>
+</div>
+
 <div class="skillsRight">
     <h3> Soft Skills </h3>
     <div class="iconRight"> 
