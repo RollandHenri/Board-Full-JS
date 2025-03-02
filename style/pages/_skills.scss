@@ -3,11 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
+  margin: 0 auto 300px auto;
   background: black;
   color: white;
   width: 100%;
-  height: 100vh;
   transform: translateY(200px);
   opacity: 0;
   transition: 0.8s ease-in-out;
@@ -23,41 +22,42 @@
   }
   & .skillsContain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: start;
     text-align: center;
   }
 
-  & .skillsLeft {
-    width: 40%;
+  & .skillsLeft,
+  .skillsMid,
+  .skillsRight {
+    width: 30%;
+    min-width: 400px;
+    height: 450px;
+    min-height: 380px;
+    margin: 30px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: all 0.3 ease;
     & h3 {
-      margin: 20px auto;
+      margin: 20px auto 50px auto;
       color: $color3;
       font-size: 1.5rem;
     }
-  }
-
-  & .skillsMid {
-    width: 40%;
-    & h3 {
-      margin: 20px auto;
-      color: $color3;
-      font-size: 1.5rem;
-    }
-  }
-
-  & .skillsRight {
-    width: 40%;
-    & h3 {
-      margin: 20px auto;
-      color: $color3;
-      font-size: 1.5rem;
+    & .skillsPara {
+      padding: 30px;
+      font-size: 1.1rem;
+      line-height: 30px;
+      text-align: start;
     }
   }
   & .iconLeft,
   .iconRight {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 30px;
     & .iconFlex {
       & i {
         font-size: 4rem;

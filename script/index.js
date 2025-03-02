@@ -51,6 +51,12 @@ skills.innerHTML = `
             <p> React.js </p>
         </div>
         </div> 
+        <div class="skillsPara">
+           <p>
+              Je développe des site internet et des applications web.
+              Je travail avec plusieurs Frameworks pour apporter des solutions particuliers à vos attentes.
+          </p>
+        </div>
 </div> 
 
 <div class="skillsMid">
@@ -61,29 +67,37 @@ skills.innerHTML = `
               <p> Wordpress</p>
           </div> 
         </div>
+            <div class="skillsPara">
+           <p>
+              Je peux développer des sites internet sous Wordpress. 
+              Je peux également modifier un site Wordpress existant et mettre en place des optimisations
+          </p>
+          </div>
+        
 </div>
 
 <div class="skillsRight">
     <h3> Soft Skills </h3>
-    <div class="iconRight"> 
-    <div class='iconFlex'> 
-        <i class="fa-brands fa-github"></i>
-        <p> GitHub </p>
-    </div>
+      <div class="iconRight"> 
+       <div class='iconFlex'> 
+         <i class="fa-brands fa-github"></i>
+         <p> GitHub </p>
+       </div>
     <div class='iconFlex'> 
         <i class="fa-brands fa-figma"></i>
         <p> Figma </p>
-    </div>
-    <div class='iconFlex'>
-        <i class="fa-brands fa-spotify"></i>
-        <p> Spotify </p>
     </div>
      <div class='iconFlex'>
         <i class="fa-solid fa-mug-saucer"></i>
         <p> Café </p>
     </div>
     </div>
-</div> 
+      <div class="skillsPara">
+           <p>
+              Je travail avec des outils pour retoucher et optimiser vos site (création de maquette, retouche de photos, ...)
+          </p>
+      </div>
+  </div> 
 </div> 
 `;
 
