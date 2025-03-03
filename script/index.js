@@ -24,10 +24,9 @@ nav.innerHTML = `
 <div class="logo"> </div>
 
 <ul>
-<li> <a href="#"> Accueil </a> </li>
-<li> <a href='#about'> About </a> </li>
-<li> <a href="#skills">Skils </a></li>
+<li> <a href='#skills'> Skills </a> </li>
 <li> <a href="#folio"> Folio </a></li>
+<li> <a href="#"> Contact </a></li>
 </ul>
 `;
 

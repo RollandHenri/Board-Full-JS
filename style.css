@@ -10,6 +10,16 @@
     opacity: 100%;
   }
 }
+@keyframes onLoadBefor {
+  0% {
+    opacity: 1;
+    z-index: 5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
 @keyframes onLoadTranslate {
   0% {
     transform: translateX(200px);
@@ -28,6 +38,14 @@
   100% {
     opacity: 1;
     width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 * {
@@ -108,6 +126,7 @@ nav ul li a:hover:after {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,15 +134,29 @@ header {
   height: 100vh;
   width: 100%;
   color: #d4b3a5;
+  transition: 0.5s;
   background: rgb(255, 255, 255);
   background: linear-gradient(171deg, rgb(255, 255, 255) 0%, rgb(87, 22, 55) 37%, rgb(0, 0, 0) 70%);
-  transition: 0.5s;
+}
+header::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  animation: onLoadBefor 1s ease-in-out forwards;
 }
 header .headerHero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 80%;
+}
+header .headerHero .center,
+header .headerHero .down,
+header .headerHero .logoLink {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1s;
 }
 header .up {
   width: 100%;
@@ -162,7 +195,7 @@ header .aboutImg {
   background: white;
   opacity: 0;
   transform: translateX(200px);
-  animation: onLoadTranslate 1s ease forwards 1s;
+  animation: onLoadTranslate 0.8s ease forwards 1.3s;
   transition: 1.2s ease-in-out;
 }
 
@@ -204,7 +237,8 @@ header .aboutImg {
   height: 450px;
   min-height: 380px;
   margin: 30px 15px;
-  border: 1px solid white;
+  border: 1px solid #5c1d3d;
+  box-shadow: 5px 5px 20px #5c1d3d;
   border-radius: 15px;
   transition: all 0.3 ease;
 }
@@ -284,7 +318,8 @@ header .aboutImg {
 #folio .folioContain .folioList .listCard .effect {
   width: 80%;
   height: 80%;
-  background-color: #141110;
+  border-radius: 10px;
+  background-color: #5c1d3d;
   margin: 0 auto;
   opacity: 0;
   cursor: pointer;
@@ -328,7 +363,8 @@ header .aboutImg {
 #footer {
   position: relative;
   background: black;
-  margin-bottom: 15px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(357deg, rgb(255, 255, 255) 0%, rgb(87, 22, 55) 27%, rgb(0, 0, 0) 75%);
 }
 #footer .footerList {
   display: flex;

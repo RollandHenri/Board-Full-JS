@@ -1,4 +1,5 @@
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,6 +7,7 @@ header {
   height: 100vh;
   width: 100%;
   color: $color3;
+  transition: 0.5s;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     171deg,
@@ -13,12 +15,26 @@ header {
     rgba(87, 22, 55, 1) 37%,
     rgba(0, 0, 0, 1) 70%
   );
-  transition: 0.5s;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    animation: onLoadBefor 1s ease-in-out forwards;
+  }
   & .headerHero {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 80%;
+
+    & .center,
+    .down,
+    .logoLink {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards 1s;
+    }
   }
   & .up {
     width: 100%;
@@ -59,7 +75,7 @@ header {
     background: white;
     opacity: 0;
     transform: translateX(200px);
-    animation: onLoadTranslate 1s ease forwards 1s;
+    animation: onLoadTranslate 0.8s ease forwards 1.3s;
     transition: 1.2s ease-in-out;
   }
 }
