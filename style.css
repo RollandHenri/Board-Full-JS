@@ -294,7 +294,9 @@ header .aboutImg {
 #folio .folioContain h2 {
   text-align: center;
   padding: 50px 0;
+  margin-bottom: 80px;
   font-size: 2rem;
+  text-transform: uppercase;
   color: #d4b3a5;
 }
 #folio .folioContain .folioList {
@@ -312,14 +314,14 @@ header .aboutImg {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 300px;
+  height: 400px;
   background: transparent;
 }
 #folio .folioContain .folioList .listCard .effect {
   width: 80%;
   height: 80%;
   border-radius: 10px;
-  background-color: #5c1d3d;
+  background-color: rgba(92, 29, 61, 0.8980392157);
   margin: 0 auto;
   opacity: 0;
   cursor: pointer;
@@ -336,6 +338,24 @@ header .aboutImg {
   padding: 15px;
   color: #d4b3a5;
   opacity: 0;
+}
+#folio .folioContain .folioList .listCard .effect button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  margin: 60px auto 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: rgba(247, 247, 247, 0.103);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#folio .folioContain .folioList .listCard .effect button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
 }
 #folio .folioContain .folioList .listCard:hover > .effect {
   transition: 0.6s ease-in-out;

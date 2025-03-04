@@ -108,24 +108,28 @@ folio.innerHTML = `
     <div class='effect'> 
     <h3> HTML / SASS </h3>
     <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    <button><a href='#'> En savoir plus </a> </button>
     </div>
   </div>
   <div class="listCard card2"> 
     <div class='effect'>
     <h3> HTML / SASS </h3>
     <p> Un site développé uniquement en HTML et CSS (SASS) </p> 
+    <button><a href='#'> En savoir plus </a> </button>
     </div> 
   </div>
   <div class="listCard card3"> 
     <div class='effect'>
     <h3> HTML / SASS </h3>
     <p> Un site développé en HTML / SASS / JavaScrip </p> 
+    <button><a href='#'> En savoir plus </a> </button>
     </div> 
   </div>
   <div class="listCard card4">
     <div class='effect'>
     <h3> JavaScript / SASS </h3>
     <p> Un site développé principalement en JavaScript et SASS ce qui en fait un site internet dynamique et fluide</p> 
+    <button><a href='#'> En savoir plus </a> </button>
     </div>
   </div>
   </div>
@@ -140,7 +144,7 @@ footer.innerHTML = `
     <li><a href='twiter.com'><i class="fa-brands fa-twitter"></i> Twitter </a> </li>
     <li><a href='instagram.comm'><i class="fa-brands fa-instagram"> </i> Instag</a> </li>
   </ul>
-  <h3> Site créé par Tramontane </br> </br> En 2024 </h3>
+  <h3> Site créé par Rolland-Dev </br> </br> En 2024 </h3>
   
 </div>
 

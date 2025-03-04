@@ -12,7 +12,9 @@
     & h2 {
       text-align: center;
       padding: 50px 0;
+      margin-bottom: 80px;
       font-size: 2rem;
+      text-transform: uppercase;
       color: $color3;
     }
     & .folioList {
@@ -29,13 +31,13 @@
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 300px;
+        height: 400px;
         background: transparent;
         & .effect {
           width: 80%;
           height: 80%;
           border-radius: 10px;
-          background-color: $color1;
+          background-color: #5c1d3de5;
           margin: 0 auto;
           opacity: 0;
           cursor: pointer;
@@ -51,6 +53,23 @@
             padding: 15px;
             color: $color3;
             opacity: 0;
+          }
+          & button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            margin: 60px auto 0;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: rgba(247, 247, 247, 0.103);
+            backdrop-filter: blur(5px);
+            & a {
+              text-decoration: none;
+              color: white;
+              font-size: 1.1rem;
+            }
           }
         }
         &:hover > .effect {
