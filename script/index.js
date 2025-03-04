@@ -26,7 +26,7 @@ nav.innerHTML = `
 <ul>
 <li> <a href='#skills'> Skills </a> </li>
 <li> <a href="#folio"> Folio </a></li>
-<li> <a href="#"> Contact </a></li>
+<li> <a href="mailto:rolland.h.dev@gmail.com"> Contact </a></li>
 </ul>
 `;
 
